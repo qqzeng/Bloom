@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>bloom</artifactId>
+        <groupId>com.qqzeng</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>bloom-serialization</artifactId>
+
+    <properties>
+        <!--<version.bloom-codec>1.0-SNAPSHOT</version.bloom-codec>-->
+        <version.bloom-common>1.0-SNAPSHOT</version.bloom-common>
+
+        <version.fastjson>1.2.47</version.fastjson>
+        <version.protobuf>3.5.1</version.protobuf>
+        <version.kryo>4.0.0</version.kryo>
+        <version.msgpack>0.7.1</version.msgpack>
+        <version.protostuff>1.1.3</version.protostuff>
+        <version.protostuff.io>1.5.9</version.protostuff.io>
+    </properties>
+
+    <dependencies>
+
+        <!-- bloom-codec module -->
+        <dependency>
+            <groupId>com.qqzeng</groupId>
+            <artifactId>bloom-common</artifactId>
+            <version>${version.bloom-common}</version>
+        </dependency>
+
+        <!-- bloom-codec module -->
+        <!--<dependency>-->
+            <!--<groupId>com.qqzeng</groupId>-->
+            <!--<artifactId>bloom-codec</artifactId>-->
+            <!--<version>${version.bloom-codec}</version>-->
+        <!--</dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${version.fastjson}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
+        <dependency>
+            <groupId>com.google.protobuf</groupId>
+            <artifactId>protobuf-java</artifactId>
+            <version>${version.protobuf}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.esotericsoftware/kryo -->
+        <dependency>
+            <groupId>com.esotericsoftware</groupId>
+            <artifactId>kryo</artifactId>
+            <version>${version.kryo}</version>
+        </dependency>
+
+        <!-- https://github.com/komamitsu/jackson-dataformat-msgpack -->
+        <dependency>
+            <groupId>org.msgpack</groupId>
+            <artifactId>jackson-dataformat-msgpack</artifactId>
+            <version>0.7.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.dyuproject.protostuff/protostuff-core -->
+        <dependency>
+            <groupId>com.dyuproject.protostuff</groupId>
+            <artifactId>protostuff-core</artifactId>
+            <version>${version.protostuff}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.dyuproject.protostuff/protostuff-runtime -->
+        <dependency>
+            <groupId>com.dyuproject.protostuff</groupId>
+            <artifactId>protostuff-runtime</artifactId>
+            <version>${version.protostuff}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.protostuff/protostuff-core -->
+        <dependency>
+            <groupId>io.protostuff</groupId>
+            <artifactId>protostuff-core</artifactId>
+            <version>${version.protostuff.io}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.protostuff/protostuff-runtime -->
+        <dependency>
+            <groupId>io.protostuff</groupId>
+            <artifactId>protostuff-runtime</artifactId>
+            <version>${version.protostuff.io}</version>
+        </dependency>
+
+    </dependencies>
+</project>

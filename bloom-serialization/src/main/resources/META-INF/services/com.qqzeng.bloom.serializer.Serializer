@@ -1,0 +1,3 @@
+# Refer Hadoop Filesystem schema
+#com.qqzeng.bloom.serializer.protostuff.ProtoStuffSerializer
+com.qqzeng.bloom.serializer.fastjson.FastJsonSerializer

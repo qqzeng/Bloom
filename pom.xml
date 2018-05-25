@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.qqzeng</groupId>
+    <artifactId>bloom</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>bloom-client</module>
+        <module>bloom-server</module>
+        <module>bloom-registry</module>
+        <module>bloom-registry-zk</module>
+        <module>bloom-common</module>
+        <module>bloom-demo-server</module>
+        <module>bloom-serialization</module>
+        <module>bloom-demo-client</module>
+        <module>bloom-test</module>
+        <module>bloom-codec</module>
+        <module>bloom-codec</module>
+        <module>bloom-codecb</module>
+    </modules>
+
+    <name>bloom</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <version.maven-compiler-plugin>3.2</version.maven-compiler-plugin>
+        <version.maven-surefire-plugin>2.18.1</version.maven-surefire-plugin>
+        <version.maven-source-plugin>2.4</version.maven-source-plugin>
+        <version.maven-javadoc-plugin>2.10.3</version.maven-javadoc-plugin>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <version.junit>4.12</version.junit>
+        <version.log4j>1.2.17</version.log4j>
+        <version.slf4j>1.7.25</version.slf4j>
+        <version.spring>5.0.4.RELEASE</version.spring>
+        <version.cglib>3.1</version.cglib>
+        <version.zookeeper>3.4.6</version.zookeeper>
+        <version.zkclient>0.4</version.zkclient>
+        <version.commons-lang>3.3.2</version.commons-lang>
+        <version.commons-collections>4.0</version.commons-collections>
+        <version.commons-io>2.5</version.commons-io>
+        <version.guava>24.1-jre</version.guava>
+
+        <version.netty>4.1.22.Final</version.netty>
+    </properties>
+
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/junit/junit -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${version.junit}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${version.commons-io}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${version.log4j}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${version.slf4j}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${version.spring}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>${version.spring}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.netty/netty-all -->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${version.netty}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${version.guava}</version>
+        </dependency>
+
+    </dependencies>
+</project>

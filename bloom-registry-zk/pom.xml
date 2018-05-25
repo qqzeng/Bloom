@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>bloom</artifactId>
+        <groupId>com.qqzeng</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>bloom-registry-zk</artifactId>
+
+    <properties>
+        <version.bloom-common> 1.0-SNAPSHOT </version.bloom-common>
+        <version.zookeeper> 3.4.6 </version.zookeeper>
+        <version.zkclient> 0.10 </version.zkclient>
+        <version.bloom-registry> 1.0-SNAPSHOT </version.bloom-registry>
+    </properties>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.zookeeper/zookeeper -->
+        <dependency>
+            <groupId>org.apache.zookeeper</groupId>
+            <artifactId>zookeeper</artifactId>
+            <version>${version.zookeeper}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.101tec/zkclient -->
+        <dependency>
+            <groupId>com.101tec</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>${version.zkclient}</version>
+        </dependency>
+
+        <!-- bloom-common module-->
+        <dependency>
+            <groupId>com.qqzeng</groupId>
+            <artifactId>bloom-common</artifactId>
+            <version>${version.bloom-common}</version>
+        </dependency>
+
+        <!-- bloom-registry module-->
+        <dependency>
+            <groupId>com.qqzeng</groupId>
+            <artifactId>bloom-registry</artifactId>
+            <version>${version.bloom-registry}</version>
+        </dependency>
+    </dependencies>
+</project>
